@@ -33,8 +33,11 @@ class snakeLadder{
 					System.out.println("dies roll="+diceRoll100);
 					System.out.println("player pos="+playerPos);
 					newPos=diceRoll100+playerPos;               
-					System.out.println("new position="+newPos);
-					System.out.println("________");
+					while(newPos>100){
+						newPos=playerPos;
+					}
+						System.out.println("new position="+newPos);
+						System.out.println("________");
 					break;
 				case 2:
 					System.out.println("-snake-");
