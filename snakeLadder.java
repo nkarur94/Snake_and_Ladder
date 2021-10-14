@@ -2,6 +2,7 @@ import java.util.Random;
 class snakeLadder{
 	int diesRoll=0; //initilization of values
 	int newPos=0;
+	int diceCount=0;
 
 	public void diesRoll(){       //method to perform dies roll
 		int min=1;
@@ -20,6 +21,7 @@ class snakeLadder{
 		{
 			Random rr1=new Random();
 			int diceRoll100=minn+rr1.nextInt(6);
+			diceCount++;
 			System.out.println("dice rolled in snake and ladder:"+diceRoll100);
 			
 			Random r2=new Random(); // object creation
@@ -61,6 +63,7 @@ class snakeLadder{
 			}
 
 		}
+		System.out.println("No of times dices was played to win the game=="+diceCount);
 
 	}
 
